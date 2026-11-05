@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="220" viewBox="0 0 820 220" role="img" aria-label="Heterodyna Team Software">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7a00df"/>
-      <stop offset="1" stop-color="#00d4ff"/>
-    </linearGradient>
-    <filter id="s" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
-    </filter>
-  </defs>
-  <rect x="8" y="8" width="804" height="204" rx="44" fill="#0b1020" stroke="rgba(255,255,255,0.12)" stroke-width="4"/>
-  <g filter="url(#s)">
-    <circle cx="118" cy="110" r="64" fill="url(#g)"/>
-    <path d="M92 78h14v64H92zm52 0h14v64h-14zM114 78h20v16h-20zm0 48h20v16h-20z" fill="rgba(11,16,32,0.88)"/>
-  </g>
-  <text x="210" y="122" font-family="Inter,system-ui,Segoe UI,Arial" font-size="52" font-weight="800" fill="url(#g)">Heterodyna</text>
-  <text x="520" y="122" font-family="Inter,system-ui,Segoe UI,Arial" font-size="32" font-weight="600" fill="#b8d6ff">Team Software</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="220" viewBox="0 0 820 220" role="img" aria-label="Heterodyna Team Software">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a00df"/>
+      <stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+    <filter id="s" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="804" height="204" rx="44" fill="#0b1020" stroke="rgba(255,255,255,0.12)" stroke-width="4"/>
+  <g filter="url(#s)">
+    <circle cx="118" cy="110" r="64" fill="url(#g)"/>
+    <path d="M92 78h14v64H92zm52 0h14v64h-14zM114 78h20v16h-20zm0 48h20v16h-20z" fill="rgba(11,16,32,0.88)"/>
+  </g>
+  <text x="210" y="122" font-family="Inter,system-ui,Segoe UI,Arial" font-size="52" font-weight="800" fill="url(#g)">Heterodyna</text>
+  <text x="520" y="122" font-family="Inter,system-ui,Segoe UI,Arial" font-size="32" font-weight="600" fill="#b8d6ff">Team Software</text>
+</svg>

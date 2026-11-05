@@ -1,0 +1,79 @@
+/* Heterodyna Cloud 03.00.166 — Premium UI, versioned last-layer override.
+   Scoped strictly to Heterodyna's app pages, never public WP or other plugins. */
+body.hts-cloud-app{--hts-premium-ink:#1b2e49;--hts-premium-muted:#667c96;--hts-premium-border:#dbe4ef;--hts-premium-accent:#315fc2;--hts-premium-canvas:#f5f7fb;background:#f5f7fb!important;color:var(--hts-premium-ink)!important;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+body.hts-cloud-app #wpcontent,body.hts-cloud-app #wpbody,body.hts-cloud-app #wpbody-content{background:#f5f7fb!important;color:var(--hts-premium-ink)!important}
+body.hts-cloud-app .hts-app-sidebar{background:#111d30;border-right:1px solid #30415a;box-shadow:8px 0 30px rgba(15,29,49,.06)}
+body.hts-cloud-app .hts-app-brand{border-bottom:1px solid #273b54;margin-bottom:17px;padding-bottom:20px}
+body.hts-cloud-app .hts-app-brand strong{font-size:15px;font-weight:750}
+body.hts-cloud-app .hts-app-nav a{border-radius:10px;min-height:19px;line-height:1.4}
+body.hts-cloud-app .hts-app-nav a.hts-nav-current{background:#2a4364;border-color:#49678c;box-shadow:inset 3px 0 #80b7ff}
+body.hts-cloud-app .hts-app-topbar{background:#fff;border-color:var(--hts-premium-border);min-height:65px}
+body.hts-cloud-app .hts-dashboard-heading h1,body.hts-cloud-app #wpbody-content .wrap h1,body.hts-cloud-app #wpbody-content .hts-dashboard-heading h1{color:#192c47!important;font-weight:750!important;letter-spacing:-.035em!important;text-shadow:none!important}
+body.hts-cloud-app .hts-dashboard-heading p,body.hts-cloud-app #wpbody-content .description{color:#647991!important}
+body.hts-cloud-app .hts-metric,body.hts-cloud-app .hts-dashboard-panel,body.hts-cloud-app #wpbody-content .wrap .widefat,body.hts-cloud-app #wpbody-content .wrap .form-table{background:#fff!important;border:1px solid var(--hts-premium-border)!important;box-shadow:0 4px 20px rgba(20,45,82,.035)!important;border-radius:14px!important}
+body.hts-cloud-app .hts-metric{padding:22px;min-height:112px}
+body.hts-cloud-app .hts-metric strong{color:#192c47;font-weight:750}
+body.hts-cloud-app .hts-metric-top,body.hts-cloud-app .hts-metric small{color:#667b95}
+body.hts-cloud-app .hts-dashboard-panel{padding:25px}
+body.hts-cloud-app .hts-section-heading h2,body.hts-cloud-app .hts-status-line strong{color:#1d324e}
+body.hts-cloud-app .hts-module-link{border-color:#edf1f7}
+body.hts-cloud-app .hts-module-link:hover,body.hts-cloud-app #wpbody-content .widefat tbody tr:hover{background:#f5f8fd!important}
+body.hts-cloud-app #wpbody-content .wrap .widefat th{background:#f3f6fb!important;color:#3e5471!important}
+body.hts-cloud-app #wpbody-content .wrap .widefat td{color:#344b66!important}
+body.hts-cloud-app #wpbody-content .wrap .form-table th{color:#344b66!important}
+body.hts-cloud-app #wpbody-content .wrap .form-table td{color:#4f657f!important}
+body.hts-cloud-app #wpbody-content .wrap :is(input[type=text],input[type=email],input[type=number],input[type=url],input[type=search],input[type=password],select,textarea){background:#fff!important;border:1px solid #c5d3e5!important;color:#1b304b!important;border-radius:9px!important;min-height:40px}
+body.hts-cloud-app #wpbody-content .wrap :is(.button,.hts-page-home){border-radius:9px!important;font-weight:650;box-shadow:none!important}
+body.hts-cloud-app #wpbody-content .wrap .button-primary,body.hts-cloud-app .hts-primary-action{background:#315fc2!important;color:#fff!important;border-color:#315fc2!important;box-shadow:none!important}
+body.hts-cloud-app #wpbody-content .wrap .button-primary:hover,body.hts-cloud-app .hts-primary-action:hover{background:#244d9d!important;border-color:#244d9d!important}
+body.hts-cloud-app :is(a,button,input,select,textarea):focus-visible{outline:3px solid #6ca7ec!important;outline-offset:2px!important}
+body.hts-cloud-app #wpbody-content .wrap .notice{background:#fff;color:#25415f;border:1px solid #d9e4f1;border-left:4px solid #4879c9;border-radius:9px}
+@media(max-width:850px){body.hts-cloud-app .hts-app-brand{padding-bottom:16px}body.hts-cloud-app .hts-app-sidebar{box-shadow:none}}
+@media(max-width:600px){body.hts-cloud-app .hts-dashboard-panel{padding:18px}body.hts-cloud-app .hts-metric{padding:18px}body.hts-cloud-app .hts-app-topbar{min-height:60px}}
+@media(prefers-reduced-motion:reduce){body.hts-cloud-app *,body.hts-cloud-app *:before,body.hts-cloud-app *:after{transition-duration:0s!important;animation-duration:0s!important}}
+
+/* v03.00.171 — Settings form visual repair. Only the Heterodyna settings forms. */
+body.hts-cloud-app .hts-settings-form,
+body.hts-cloud-app .hts-settings-legacy{max-width:1120px;color:#243954}
+body.hts-cloud-app .hts-settings-form .form-table{width:100%;max-width:1120px!important;background:#fff!important;border:1px solid #dbe4ef!important;border-collapse:separate!important;border-spacing:0!important;border-radius:14px!important;box-shadow:0 5px 24px rgba(17,37,65,.05)!important;overflow:hidden}
+body.hts-cloud-app .hts-settings-form .form-table tr{background:#fff!important}
+body.hts-cloud-app .hts-settings-form .form-table tr:not(:last-child)>:is(th,td){border-bottom:1px solid #e8eef5!important}
+body.hts-cloud-app .hts-settings-form .form-table th{width:215px!important;min-width:160px!important;padding:21px 22px!important;vertical-align:top!important;color:#273b55!important;font-size:13px!important;font-weight:700!important;line-height:1.6!important;background:#fafcff!important}
+body.hts-cloud-app .hts-settings-form .form-table td{padding:19px 22px!important;vertical-align:top!important;color:#304860!important;line-height:1.6!important}
+body.hts-cloud-app .hts-settings-form .form-table td .description{color:#667a92!important;opacity:1!important;line-height:1.6!important}
+body.hts-cloud-app .hts-settings-form .form-table td p{margin:7px 0 12px!important}
+body.hts-cloud-app .hts-settings-form .form-table td code{background:#eff4fa!important;color:#294563!important;border-radius:5px!important}
+body.hts-cloud-app .hts-settings-form :is(input.regular-text,select){width:min(100%,480px)!important;max-width:100%!important;box-sizing:border-box!important}
+body.hts-cloud-app .hts-settings-form select{width:auto!important;min-width:165px!important;min-height:42px!important}
+body.hts-cloud-app .hts-settings-form input[type=checkbox]{width:16px!important;height:16px!important;min-height:16px!important;accent-color:#315fc2!important}
+body.hts-cloud-app .hts-settings-form :is(.button,.button-secondary),body.hts-cloud-app .hts-settings-legacy .button{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:auto!important;min-width:0!important;min-height:38px!important;padding:8px 15px!important;background:#eef4fc!important;border:1px solid #b7cbe7!important;color:#224d89!important;opacity:1!important;visibility:visible!important;text-shadow:none!important;text-decoration:none!important;font-size:13px!important;font-weight:650!important;line-height:1.3!important;white-space:normal!important}
+body.hts-cloud-app .hts-settings-form :is(.button,.button-secondary):hover,body.hts-cloud-app .hts-settings-legacy .button:hover{background:#dce9fa!important;color:#173e76!important;border-color:#8eb2e2!important}
+body.hts-cloud-app .hts-settings-form .button-primary{background:#315fc2!important;color:#fff!important;border-color:#315fc2!important;padding:11px 21px!important;min-height:43px!important}
+body.hts-cloud-app .hts-settings-form .button-primary:hover{background:#244d9d!important;border-color:#244d9d!important;color:#fff!important}
+body.hts-cloud-app .hts-settings-form .button:disabled,body.hts-cloud-app .hts-settings-legacy .button:disabled{opacity:.55!important;cursor:not-allowed!important}
+body.hts-cloud-app .hts-settings-legacy .button{margin-top:9px}
+body.hts-cloud-app .hts-settings-form+.hts-settings-legacy{margin-top:14px}
+@media(max-width:780px){body.hts-cloud-app .hts-settings-form .form-table tr,body.hts-cloud-app .hts-settings-form .form-table :is(th,td){display:block!important;width:100%!important;min-width:0!important;box-sizing:border-box!important}body.hts-cloud-app .hts-settings-form .form-table th{padding:15px 16px 3px!important;border-bottom:0!important}body.hts-cloud-app .hts-settings-form .form-table td{padding:10px 16px 17px!important}body.hts-cloud-app .hts-settings-form .form-table tr:not(:last-child)>th{border-bottom:0!important}}
+
+/* v03.00.172 — Plan editor refinements, scoped to Heterodyna Cloud. */
+body.hts-cloud-app .wrap input[type="text"],
+body.hts-cloud-app .wrap input[type="number"],
+body.hts-cloud-app .wrap select,
+body.hts-cloud-app .wrap textarea {min-height:38px;max-width:100%;box-sizing:border-box;border-radius:8px;border:1px solid #c5d3e5;background:#fff;color:#15263e;padding:7px 10px;}
+body.hts-cloud-app .wrap .nav-tab-wrapper {display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid #d5dfed;padding:0 0 8px;}
+body.hts-cloud-app .wrap .nav-tab {display:inline-flex;align-items:center;min-height:35px;padding:7px 11px;margin:0;background:#f3f6fb;color:#24446b;border:1px solid #d5dfed;border-radius:8px;font-weight:600;text-decoration:none;}
+body.hts-cloud-app .wrap .nav-tab.nav-tab-active {background:#2c5dc8;border-color:#2c5dc8;color:#fff;}
+body.hts-cloud-app .wrap .button:disabled,body.hts-cloud-app .wrap .button[disabled] {color:#66788f!important;background:#e7edf5!important;border-color:#cbd5e1!important;opacity:1;cursor:not-allowed;}
+body.hts-cloud-app .wrap .widefat td {vertical-align:middle;}
+@media(max-width:850px){body.hts-cloud-app .wrap .widefat{display:block;overflow-x:auto;}body.hts-cloud-app .wrap .widefat td{min-width:85px;}}
+
+/* 03.00.174: plan creation */
+.hds3-create-plan {padding:20px;margin:16px 0 26px;background:#fff;border:1px solid #dbe5f2;border-radius:14px;color:#17243b}
+.hds3-create-plan h2 {margin-top:0;color:#152841}
+.hds3-plan-create-form {display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;align-items:end}
+.hds3-plan-create-form label {display:flex;flex-direction:column;gap:6px;font-weight:600;color:#243755}
+.hds3-plan-create-form input {box-sizing:border-box;width:100%;min-height:40px;border:1px solid #b8cae5;border-radius:7px;background:#fff;color:#10233f}
+.hds3-plan-create-form button {min-height:40px}
+
+/* Setup wizard — scoped to its page only */
+.hts-cloud-app .hds3-setup{max-width:1100px}.hts-cloud-app .hds3-setup-panel,.hts-cloud-app .hds3-setup-step{background:#fff;border:1px solid #dfe6ef;border-radius:14px;padding:20px;margin:16px 0;color:#18263c}.hts-cloud-app .hds3-setup-step{display:flex;align-items:center;gap:20px}.hts-cloud-app .hds3-setup-step>div{flex:1}.hts-cloud-app .hds3-setup-step p{margin:7px 0 0;color:#51627a}.hts-cloud-app .hds3-setup-state{min-width:145px;color:#164d83;font-weight:700}.hts-cloud-app .hds3-setup input{max-width:100%;min-height:40px}@media(max-width:700px){.hts-cloud-app .hds3-setup-step{flex-wrap:wrap}.hts-cloud-app .hds3-setup-step>div{flex-basis:100%}}

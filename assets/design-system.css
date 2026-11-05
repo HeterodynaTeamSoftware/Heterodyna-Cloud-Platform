@@ -1,0 +1,69 @@
+/* Heterodyna Cloud design-system 03.00.182. Scoped; loaded after legacy sheets. */
+body.hts-cloud-app #wpbody-content .wrap .hds3-card,
+body.hts-cloud-app #wpbody-content .hds3-card,
+body.hts-cloud-app #wpbody-content .wrap .hds3-create-plan {
+ background:#fff!important;color:#1a304b!important;border:1px solid #dce5f0!important;
+ border-radius:14px!important;box-shadow:0 5px 20px rgba(19,40,70,.045)!important;
+ padding:22px!important;margin-bottom:18px!important;
+}
+body.hts-cloud-app #wpbody-content .hds3-card :is(h2,h3,h4),
+body.hts-cloud-app #wpbody-content .hds3-create-plan :is(h2,h3,h4) {
+ color:#152b46!important;text-shadow:none!important;opacity:1!important;
+ background:transparent!important;font-weight:700;line-height:1.35;
+}
+body.hts-cloud-app #wpbody-content .hds3-card :is(p,label,span),
+body.hts-cloud-app #wpbody-content .hds3-create-plan :is(p,label,span) {color:#405875!important;opacity:1!important;}
+body.hts-cloud-app #wpbody-content .hds3-card .description{color:#607692!important;}
+body.hts-cloud-app #wpbody-content .hds3-card :is(.widefat,.form-table){background:#fff!important;color:#263c56!important;}
+body.hts-cloud-app #wpbody-content .hds3-card .form-table th{background:#f8fafd!important;color:#243d59!important;}
+body.hts-cloud-app #wpbody-content .hds3-card .form-table td{background:#fff!important;color:#324963!important;}
+body.hts-cloud-app #wpbody-content .hds3-card .widefat thead th{background:#f1f5fa!important;color:#38516e!important;}
+body.hts-cloud-app #wpbody-content .hds3-card .widefat tbody td{background:transparent!important;color:#2c4360!important;}
+body.hts-cloud-app #wpbody-content .hds3-card :is(input,select,textarea){max-width:100%;box-sizing:border-box;font:inherit;}
+body.hts-cloud-app #wpbody-content .hds3-card .regular-text{width:min(100%,520px)!important;}
+body.hts-cloud-app #wpbody-content .hds3-card textarea.large-text{width:100%!important;}
+body.hts-cloud-app #wpbody-content .hds3-card .button-primary{color:#fff!important;background:#315fc2!important;}
+body.hts-cloud-app #wpbody-content .hds3-card .button:not(.button-primary){background:#fff!important;color:#25466e!important;}
+body.hts-cloud-app #wpbody-content .hds3-card a{color:#245bbd;}
+/* Prevent nested scroll tracks at desktop widths. */
+@media(min-width:783px){body.hts-cloud-app .hts-app-sidebar{overflow-x:hidden!important;scrollbar-width:thin;}}
+@media(max-width:850px){body.hts-cloud-app #wpbody-content .hds3-card{padding:14px!important;}}
+
+
+/* 03.00.182 — Scoped control contrast: first-run wizard + verification only. */
+body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-step {
+ display:grid!important;grid-template-columns:minmax(120px,160px) minmax(0,1fr) auto;
+ align-items:center!important;gap:18px!important;background:#fff!important;
+ color:#1b304c!important;border:1px solid #dbe4f0!important;
+ box-shadow:none!important;border-radius:12px!important;padding:18px 20px!important;
+}
+body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-step :is(strong,p,span){color:#243b5a!important;text-shadow:none!important;opacity:1!important}
+body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-state{font-weight:700!important;color:#27518b!important}
+body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-step > div{min-width:0!important}
+body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-step > a.button,
+body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-panel .button {
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ color:#234875!important;background:#f2f6fc!important;border:1px solid #abc1de!important;
+ min-width:116px!important;min-height:42px!important;padding:10px 16px!important;
+ font-size:13px!important;font-weight:700!important;line-height:1.25!important;
+ text-decoration:none!important;text-shadow:none!important;opacity:1!important;visibility:visible!important;
+ box-shadow:none!important;border-radius:9px!important;
+}
+body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-step > a.button:hover{background:#e4efff!important;color:#173a70!important;border-color:#719bd4!important}
+body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-panel .button-primary{background:#315fc2!important;color:#fff!important;border-color:#315fc2!important}
+body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-panel .button-primary:hover{background:#244d9d!important;color:#fff!important}
+body.hts-cloud-app #wpbody-content .hds3-setup :is(input,textarea,select){background:#fff!important;color:#172d4c!important;border:1px solid #adc2de!important;border-radius:8px!important;min-height:42px!important;padding:8px 12px!important}
+/* Verification page: narrow to a body class applied to its form and action controls. */
+body.hts-cloud-app #wpbody-content .hds3-verification-actions{display:flex!important;gap:10px!important;flex-wrap:wrap!important;margin:16px 0!important}
+body.hts-cloud-app #wpbody-content .hds3-verification-actions .button{
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ min-height:42px!important;padding:9px 16px!important;background:#eff5fe!important;
+ color:#204676!important;border:1px solid #b3c7e4!important;border-radius:9px!important;
+ opacity:1!important;visibility:visible!important;text-shadow:none!important;
+ font-weight:700!important;font-size:13px!important;box-shadow:none!important;
+}
+body.hts-cloud-app #wpbody-content .hds3-verification-actions .button-primary{background:#315fc2!important;color:#fff!important;border-color:#315fc2!important}
+body.hts-cloud-app #wpbody-content .hds3-verification-actions .button:hover{background:#dfeafa!important;color:#183969!important}
+body.hts-cloud-app #wpbody-content .hds3-verification-actions .button-primary:hover{background:#234d9f!important;color:#fff!important}
+body.hts-cloud-app #wpbody-content :is(.hds3-verification-actions .button,.hds3-setup .button):focus-visible{outline:3px solid #619bee!important;outline-offset:3px!important}
+@media(max-width:850px){body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-step{grid-template-columns:1fr!important;gap:10px!important}body.hts-cloud-app #wpbody-content .hds3-setup .hds3-setup-step > a.button{justify-self:start!important}}

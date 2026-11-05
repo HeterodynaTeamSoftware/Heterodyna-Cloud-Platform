@@ -1,0 +1,20 @@
+name: Offline quality checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  lint-and-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PHP CLI and Python
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y php-cli python3
+      - name: Run offline regression suite
+        run: python3 tests/run-offline.py
+      - name: Check package consistency and PHP syntax
+        run: python3 tools/check-package.py

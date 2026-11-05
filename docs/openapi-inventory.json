@@ -1,0 +1,921 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Heterodyna Cloud Platform REST API — inventory",
+    "version": "03.00.167",
+    "description": "Automatyczna inwentaryzacja tras, NIE certyfikowany kontrakt integracyjny. Nie należy zakładać, że endpointy są publiczne lub bezpieczne. Konieczna kontrola handlerów, parametrów i testy auth."
+  },
+  "servers": [
+    {
+      "url": "/wp-json/heterodyna/v3"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      },
+      "WordPressSession": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-WP-Nonce",
+        "description": "Nonce WordPress dla zalogowanego użytkownika"
+      }
+    }
+  },
+  "paths": {
+    "/admin/jobs/run": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "POST /admin/jobs/run",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/admin/modules/save": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "POST /admin/modules/save",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/admin/ops/connector/delete": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "POST /admin/ops/connector/delete",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/admin/ops/connector/revoke": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "POST /admin/ops/connector/revoke",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/admin/ops/license/delete": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "POST /admin/ops/license/delete",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/admin/ops/license/revoke": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "POST /admin/ops/license/revoke",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/admin/ops/tenant/delete": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "POST /admin/ops/tenant/delete",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/admin/ops/tenant/revoke": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "POST /admin/ops/tenant/revoke",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/admin/ops/token/delete": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "POST /admin/ops/token/delete",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/admin/telemetry/events": {
+      "get": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "GET /admin/telemetry/events",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/agency/bootstrap-token": {
+      "post": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "POST /agency/bootstrap-token",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/agency/connector/create": {
+      "post": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "POST /agency/connector/create",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/agency/connector/delete": {
+      "post": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "POST /agency/connector/delete",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/agency/connector/revoke": {
+      "post": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "POST /agency/connector/revoke",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/agency/connectors": {
+      "get": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "GET /agency/connectors",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/agency/provision": {
+      "post": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "POST /agency/provision",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/agency/subkey/create": {
+      "post": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "POST /agency/subkey/create",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/agency/subkeys": {
+      "get": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "GET /agency/subkeys",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/agency/subtoken/create": {
+      "post": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "POST /agency/subtoken/create",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/agency/verify": {
+      "post": {
+        "tags": [
+          "agency"
+        ],
+        "summary": "POST /agency/verify",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/health": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "GET /health",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/iam/audit": {
+      "get": {
+        "tags": [
+          "iam"
+        ],
+        "summary": "GET /iam/audit",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-audit.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/iam/members": {
+      "get": {
+        "tags": [
+          "iam"
+        ],
+        "summary": "GET /iam/members",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-iam.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/license/activate": {
+      "post": {
+        "tags": [
+          "license"
+        ],
+        "summary": "POST /license/activate",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/license/validate": {
+      "post": {
+        "tags": [
+          "license"
+        ],
+        "summary": "POST /license/validate",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/ppv/complete": {
+      "post": {
+        "tags": [
+          "ppv"
+        ],
+        "summary": "POST /ppv/complete",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/ppv/status": {
+      "get": {
+        "tags": [
+          "ppv"
+        ],
+        "summary": "GET /ppv/status",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/seo/license/activate": {
+      "post": {
+        "tags": [
+          "seo"
+        ],
+        "summary": "POST /seo/license/activate",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/seo/license/me": {
+      "get": {
+        "tags": [
+          "seo"
+        ],
+        "summary": "GET /seo/license/me",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/seo/telemetry/error": {
+      "post": {
+        "tags": [
+          "seo"
+        ],
+        "summary": "POST /seo/telemetry/error",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/seo/telemetry/heartbeat": {
+      "post": {
+        "tags": [
+          "seo"
+        ],
+        "summary": "POST /seo/telemetry/heartbeat",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/telemetry/event": {
+      "post": {
+        "tags": [
+          "telemetry"
+        ],
+        "summary": "POST /telemetry/event",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/verification/complete-step": {
+      "post": {
+        "tags": [
+          "verification"
+        ],
+        "summary": "POST /verification/complete-step",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": false,
+        "security": [
+          {
+            "WordPressSession": []
+          },
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/verification/status": {
+      "get": {
+        "tags": [
+          "verification"
+        ],
+        "summary": "GET /verification/status",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    },
+    "/verification/steps": {
+      "get": {
+        "tags": [
+          "verification"
+        ],
+        "summary": "GET /verification/steps",
+        "description": "Wygenerowano z rejestracji trasy PHP. Parametry, odpowiedzi i zabezpieczenia wymagają dalszej weryfikacji ręcznej. Permission callback dopuszcza żądanie do handlera; NIE oznacza to, że operacja jest anonimowa ani że uwierzytelnianie w handlerze zostało zweryfikowane.",
+        "responses": {
+          "200": {
+            "description": "Odpowiedź endpointu; rzeczywisty schemat nieudokumentowany"
+          },
+          "default": {
+            "description": "Błąd zgodny z obsługą WordPress REST"
+          }
+        },
+        "x-heterodyna-source": "class-hds3-rest.php",
+        "x-security-review": "required",
+        "x-permission-callback-public": true
+      }
+    }
+  }
+}
