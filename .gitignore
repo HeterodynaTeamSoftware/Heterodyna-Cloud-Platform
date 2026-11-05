@@ -1,0 +1,15 @@
+# Local secrets and data
+.env
+.env.*
+!.env.example
+*.sql
+*.sql.gz
+*.sqlite
+wp-config.php
+admin_zips/
+*.log
+__pycache__/
+.pytest_cache/
+.DS_Store
+.vscode/
+.idea/
