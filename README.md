@@ -19,6 +19,12 @@
 
 ---
 
+## Zrzuty ekranu
+
+### Pulpit platformy
+
+![Heterodyna Cloud Platform — pulpit platformy v03.00.182](screeny/cloud-platform-dashboard-v03.00.182.png)
+
 ## O projekcie
 
 **Heterodyna Cloud Platform** to otwartoźródłowa wtyczka WordPress stanowiąca podstawę do budowy i administracji usługami SaaS. Łączy zarządzanie organizacjami, kontami i uprawnieniami z modułami licencji, subskrypcji oraz monitorowania działania platformy.
